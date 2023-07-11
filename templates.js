@@ -43,8 +43,8 @@
       <textarea value="bio" placeholder="Bio"></textarea>
       <label for="tweet">New Tweet</label>
       <div class="new-tweet">
-        <input type="text" value="tweet" placeholder="New Tweet" />
-        <button>Add Tweet</button>
+        <input type="text" value="tweet" placeholder="New Tweet" v-model="newTweet"/>
+        <button v-on:click="tweets.push(newTweet)"></button>
       </div>
     </div>
   </div>
