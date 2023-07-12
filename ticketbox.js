@@ -10,7 +10,7 @@
   <script src="./js/app.js" defer></script>
 </head>
 <body>
-  <div>
+  <div id="app">
     <header>
       <img class="logo" src="https://content.codecademy.com/courses/vue-instances/ticket_logo.svg" alt="logo">
       <h1>TICKETBOX</h1>
@@ -78,7 +78,7 @@
       <div class="form-row vertical agreement checkbox">
         <fieldset>
           <legend>Purchase Agreement</legend>
-          <p>I, First Last, wish to buy Quantity Type tickets. I understand that all ticket sales are final.</p>
+          <p>I, {{ fullName }}, wish to buy {{ ticketDescription }}. I understand that all ticket sales are final.</p>
           <input type="checkbox" name="agreement" id="agree">
           <label for="agree">I Agree</label>
         </fieldset>
