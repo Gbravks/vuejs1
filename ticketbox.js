@@ -1,18 +1,17 @@
-<!DOCTYPE html>
 <html>
 <head>
   <title>Ticketbox</title>
-  <link rel="stylesheet" type="text/css" href="./css/reset.css">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
   <script src="./js/app.js" defer></script>
 </head>
 <body>
   <div id="app">
     <header>
-      <img class="logo" src="https://content.codecademy.com/courses/vue-instances/ticket_logo.svg" alt="logo">
+      <img class="logo" src="https://content.codecademy.com/courses/vue-instances/ticket_logo.svg" alt="logo" />
       <h1>TICKETBOX</h1>
     </header>
     <form>
@@ -45,11 +44,11 @@
         <div class="form-field">
           <legend>Ticket Type</legend>
           <div>
-            <input type="radio" id="general" value="general">
+            <input type="radio" id="general" value="general"/>
             <label for="general">General Admission</label>
           </div>
           <div>
-            <input type="radio" id="vip" value="vip">
+            <input type="radio" id="vip" value="vip"/>
             <label for="vip">VIP</label>
           </div>
         </div>
@@ -58,15 +57,15 @@
         <fieldset>
           <legend>How did you hear about this event?</legend>
           <div>
-            <input type="checkbox" id="friend" value="friend">
+            <input type="checkbox" id="friend" value="friend"/>
             <label for="friend">Friend</label>
           </div>
           <div>
-            <input type="checkbox" id="publication" value="publication">
+            <input type="checkbox" id="publication" value="publication"/>
             <label for="publication">Publication</label>
           </div>
           <div>
-            <input type="checkbox" id="social-media" value="social">
+            <input type="checkbox" id="social-media" value="social"/>
             <label for="social-media">Social Media</label>
           </div>
         </fieldset>
@@ -79,7 +78,7 @@
         <fieldset>
           <legend>Purchase Agreement</legend>
           <p>I, {{ fullName }}, wish to buy {{ ticketDescription }}. I understand that all ticket sales are final.</p>
-          <input type="checkbox" name="agreement" id="agree">
+          <input type="checkbox" name="agreement" id="agree"/>
           <label for="agree">I Agree</label>
         </fieldset>
       </div>
